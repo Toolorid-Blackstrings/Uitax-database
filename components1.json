@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "title": "loaders by 0xnihilism_brown-puma-30",
+    "author": "@0xnihilism_brown-puma-30",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"orwellian-container\">\n  <div class=\"orwellian-loader\">\n    <div class=\"eye\">\n      <div class=\"pupil\"></div>\n      <div class=\"eyelid\"></div>\n    </div>\n    <div class=\"spotlight\"></div>\n    <div class=\"text\">BIG BROTHER IS LOADING</div>\n    <div class=\"scan-lines\"></div>\n    <div class=\"tv-effect\"></div>\n  </div>\n</div>",
+    "html": "<div class=\"orwellian-container\">\n  <div class=\"orwellian-loader\">\n    <div class=\"eye\">\n      <div class=\"pupil\"></div>\n      <div class=\"eyelid\"></div>\n    </div>\n    <div class=\"spotlight\"></div>\n    <div class=\"text\">BIG BROTHER IS LOADING</div>\n    <div class=\"scan-lines\"></div>\n    <div class=\"tv-effect\"></div>\n  </div>\n</div>",
+    "css": ".orwellian-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  margin: 0;\n  overflow: hidden;\n  font-family: \"Arial Black\", \"Helvetica Neue\", Arial, sans-serif;\n  font-weight: 900;\n}\n.orwellian-container .orwellian-loader {\n  width: 280px;\n  height: 280px;\n  background-color: #000;\n  border: 10px solid #333;\n  position: relative;\n  overflow: hidden;\n  padding: 20px;\n  box-sizing: border-box;\n}\n\n.orwellian-container .eye {\n  width: 160px;\n  height: 60px;\n  background-color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 30%;\n  left: 50%;\n  transform: translate(-50%, -60%);\n  animation: pulse 2s infinite;\n  overflow: hidden;\n  z-index: 10;\n}\n\n.orwellian-container .pupil {\n  width: 50px;\n  height: 50px;\n  background-color: #000;\n  border-radius: 50%;\n  position: absolute;\n  top: 33%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  animation: look-diagonal 4s infinite ease-in-out;\n}\n\n.orwellian-container .pupil::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 30px;\n  height: 30px;\n  background: radial-gradient(circle, rgb(255, 0, 0) 0%, transparent 70%);\n  border-radius: 50%;\n  transform: translate(-50%, -50%);\n  opacity: 0.7;\n}\n\n.orwellian-container .eyelid {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: #000;\n  animation: blink 4s infinite;\n}\n\n.orwellian-container .spotlight {\n  position: absolute;\n  top: 30%;\n  left: 50%;\n  width: 47px;\n  height: 200px;\n  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8), transparent);\n  filter: blur(8px);\n  transform-origin: top;\n  animation: spotlight-sweep-diagonal 4s infinite ease-in-out;\n}\n\n.orwellian-container .text {\n  position: absolute;\n  bottom: 20px;\n  left: 10px;\n  right: 10px;\n  text-align: center;\n  font-size: 20px;\n  font-weight: bold;\n  color: #f8d17c;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  animation: glitch 1s infinite;\n  z-index: 20;\n}\n\n.orwellian-container .scan-lines {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: linear-gradient(\n    to bottom,\n    transparent 50%,\n    rgba(0, 0, 0, 0.3) 50%\n  );\n  background-size: 100% 4px;\n  animation: scan 10s linear infinite;\n  z-index: 30;\n  opacity: 0.3;\n  pointer-events: none;\n}\n\n.orwellian-container .tv-effect {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),\n    linear-gradient(\n      90deg,\n      rgba(255, 0, 0, 0.06),\n      rgba(0, 255, 0, 0.02),\n      rgba(0, 0, 255, 0.06)\n    );\n  background-size: 100% 2px, 3px 100%;\n  animation: tv-flicker 0.15s infinite;\n  z-index: 35;\n  pointer-events: none;\n  opacity: 0.5;\n}\n\n.orwellian-container .orwellian-loader::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: repeating-linear-gradient(\n    0deg,\n    rgba(255, 255, 255, 0.03),\n    rgba(255, 255, 255, 0.03) 1px,\n    transparent 1px,\n    transparent 2px\n  );\n  pointer-events: none;\n  z-index: 40;\n}\n\n.orwellian-container .orwellian-loader::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: radial-gradient(\n    circle at center,\n    transparent 30%,\n    rgba(0, 0, 0, 0.5) 90%\n  );\n  z-index: 35;\n  pointer-events: none;\n}\n\n@keyframes look-diagonal {\n  0%,\n  100% {\n    transform: translateX(-50%) rotate(0deg);\n  }\n  25% {\n    transform: translateX(-40%) rotate(-15deg);\n  }\n  75% {\n    transform: translateX(-60%) rotate(15deg);\n  }\n}\n\n@keyframes spotlight-sweep-diagonal {\n  0%,\n  100% {\n    transform: translateX(-50%) rotate(0deg);\n  }\n  25% {\n    transform: translateX(-40%) rotate(-15deg);\n  }\n  75% {\n    transform: translateX(-60%) rotate(15deg);\n  }\n}\n\n@keyframes pulse {\n  0%,\n  100% {\n    transform: translate(-50%, -60%) scale(1);\n  }\n  50% {\n    transform: translate(-50%, -60%) scale(1.05);\n  }\n}\n\n@keyframes glitch {\n  0%,\n  100% {\n    transform: translate(0, 0);\n    opacity: 1;\n  }\n  25% {\n    transform: translate(-2px, 2px);\n    opacity: 0.75;\n  }\n  50% {\n    transform: translate(2px, -2px);\n    opacity: 0.5;\n  }\n  75% {\n    transform: translate(-2px, -2px);\n    opacity: 0.75;\n  }\n}\n\n@keyframes blink {\n  0%,\n  90%,\n  100% {\n    height: 0;\n  }\n  95% {\n    height: 100%;\n  }\n}\n\n@keyframes scan {\n  0% {\n    background-position: 0 0;\n  }\n  100% {\n    background-position: 0 100%;\n  }\n}\n\n@keyframes tv-flicker {\n  0% {\n    opacity: 0.27049;\n  }\n  5% {\n    opacity: 0.34801;\n  }\n  10% {\n    opacity: 0.23175;\n  }\n  15% {\n    opacity: 0.40923;\n  }\n  20% {\n    opacity: 0.29481;\n  }\n  25% {\n    opacity: 0.38584;\n  }\n  30% {\n    opacity: 0.24928;\n  }\n  35% {\n    opacity: 0.32451;\n  }\n  40% {\n    opacity: 0.37031;\n  }\n  45% {\n    opacity: 0.26941;\n  }\n  50% {\n    opacity: 0.35755;\n  }\n  55% {\n    opacity: 0.29288;\n  }\n  60% {\n    opacity: 0.31821;\n  }\n  65% {\n    opacity: 0.39726;\n  }\n  70% {\n    opacity: 0.25294;\n  }\n  75% {\n    opacity: 0.36898;\n  }\n  80% {\n    opacity: 0.28995;\n  }\n  85% {\n    opacity: 0.3398;\n  }\n  90% {\n    opacity: 0.38703;\n  }\n  95% {\n    opacity: 0.24619;\n  }\n  100% {\n    opacity: 0.35762;\n  }\n}\n\n\n.orwellian-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  min-height: 300px; \n}\n\n\n@media (max-width: 480px) {\n  .orwellian-container .orwellian-loader {\n    width: 240px;\n    height: 240px;\n  }\n\n  .orwellian-container .eye {\n    width: 140px;\n    height: 50px;\n  }\n\n  .orwellian-container .pupil {\n    width: 40px;\n    height: 40px;\n  }\n\n  .orwellian-container .spotlight {\n    width: 40px;\n    height: 160px;\n  }\n\n  .orwellian-container .text {\n    font-size: 16px;\n  }\n}\n\n\n.orwellian-container .text {\n  user-select: none; \n}\n\n.orwellian-container .orwellian-loader:focus {\n  outline: 2px solid #fff;\n  outline-offset: 2px;\n}\n\n.orwellian-container .orwellian-loader {\n  animation: subtle-rotate 6s infinite ease-in-out;\n}\n\n\n.orwellian-container .tv-effect::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: radial-gradient(\n      circle at center,\n      rgba(255, 255, 255, 0.1) 0%,\n      transparent 80%\n    ),\n    repeating-radial-gradient(\n      circle at center,\n      rgba(0, 0, 0, 0) 0,\n      rgba(0, 0, 0, 0.1) 1px,\n      transparent 1px,\n      transparent 4px\n    );\n  background-size: 100% 100%, 3px 3px;\n  pointer-events: none;\n}\n\n\n.orwellian-container .text {\n  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),\n    0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);\n}\n\n\n.orwellian-container .spotlight::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: radial-gradient(\n    circle at top,\n    rgba(255, 255, 255, 0.2) 0%,\n    transparent 70%\n  );\n  filter: blur(5px);\n}\n\n\n@keyframes eye-glow {\n  0%,\n  100% {\n    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);\n  }\n  50% {\n    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);\n  }\n}\n\n.orwellian-container .eye {\n  animation: pulse 2s infinite, eye-glow 4s infinite;\n}"
+  },
+  {
+    "id": 2,
+    "title": "loaders by A-nshuman_fluffy-fox-90",
+    "author": "@A-nshuman_fluffy-fox-90",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"blocks\">\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n</div>",
+    "html": "<div class=\"blocks\">\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n  <div class=\"block\"></div>\n</div>",
+    "css": ".blocks {\n  border: 2px solid #2b83e2;\n  max-width: 158px;\n  padding: 4px;\n  border-radius: 8px;\n  gap: 4px;\n  display: flex;\n  flex-wrap: wrap;\n}\n.blocks .block {\n  display: flex;\n  flex: 1;\n  border-radius: 4px;\n  background: #2b83e2;\n  width: 75px;\n  height: 75px;\n  animation: blockLoading 1s infinite;\n}\n.blocks .block:nth-child(1) {\n  animation-delay: 0ms;\n}\n.blocks .block:nth-child(2) {\n  animation-delay: 200ms;\n}\n.blocks .block:nth-child(3) {\n  animation-delay: 400ms;\n}\n.blocks .block:nth-child(4) {\n  animation-delay: 600ms;\n}\n@keyframes blockLoading {\n  0%,\n  100% {\n    flex: 1;\n  }\n  50% {\n    flex: 4;\n  }\n}"
+  },
+  {
+    "id": 3,
+    "title": "loaders by AHMED-MIT_cold-ape-73",
+    "author": "@AHMED-MIT_cold-ape-73",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"spinner\"></div>",
+    "html": "<div class=\"spinner\"></div>",
+    "css": ".spinner {\n  position: relative;\n  width: 35.2px;\n  height: 35.2px;\n}\n\n.spinner::before,\n.spinner::after {\n  content: '';\n  width: 100%;\n  height: 100%;\n  display: block;\n  animation: spinner-b4c8mmhg 0.5s backwards, spinner-49opz7hg 1.25s 0.5s infinite ease;\n  border: 8.8px solid #000000;\n  border-radius: 50%;\n  box-shadow: 0 -52.8px 0 -8.8px #000000;\n  position: absolute;\n}\n\n.spinner::after {\n  animation-delay: 0s, 1.25s;\n}\n\n@keyframes spinner-b4c8mmhg {\n  from {\n    box-shadow: 0 0 0 -8.8px #000000;\n  }\n}\n\n@keyframes spinner-49opz7hg {\n  to {\n    transform: rotate(360deg);\n  }\n}"
+  },
+  {
+    "id": 4,
+    "title": "loaders by AHMED-MIT_curly-rabbit-4",
+    "author": "@AHMED-MIT_curly-rabbit-4",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"spinner\"></div>",
+    "html": "<div class=\"spinner\"></div>",
+    "css": ".spinner {\n  width: 56px;\n  height: 56px;\n  display: grid;\n  border: 4.5px solid #0000;\n  border-radius: 50%;\n  border-color: #dbdcef #0000;\n  animation: spinner-e04l1k 1s infinite linear;\n}\n\n.spinner::before,\n.spinner::after {\n  content: \"\";\n  grid-area: 1/1;\n  margin: 2.2px;\n  border: inherit;\n  border-radius: 50%;\n}\n\n.spinner::before {\n  border-color: #474bff #0000;\n  animation: inherit;\n  animation-duration: 0.5s;\n  animation-direction: reverse;\n}\n\n.spinner::after {\n  margin: 8.9px;\n}\n\n@keyframes spinner-e04l1k {\n  100% {\n    transform: rotate(1turn);\n  }\n}"
+  },
+  {
+    "id": 5,
+    "title": "loaders by AHMED-MIT_dry-wolverine-85",
+    "author": "@AHMED-MIT_dry-wolverine-85",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"spinner\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "html": "<div class=\"spinner\">\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n  <div></div>\n</div>",
+    "css": ".spinner {\n  position: relative;\n  width: 33.6px;\n  height: 33.6px;\n  perspective: 67.2px;\n}\n\n.spinner div {\n  width: 100%;\n  height: 100%;\n  background: #474bff;\n  position: absolute;\n  left: 50%;\n  transform-origin: left;\n  animation: spinner-16s03x 2s infinite;\n}\n\n.spinner div:nth-child(1) {\n  animation-delay: 0.15s;\n}\n\n.spinner div:nth-child(2) {\n  animation-delay: 0.3s;\n}\n\n.spinner div:nth-child(3) {\n  animation-delay: 0.45s;\n}\n\n.spinner div:nth-child(4) {\n  animation-delay: 0.6s;\n}\n\n.spinner div:nth-child(5) {\n  animation-delay: 0.75s;\n}\n\n@keyframes spinner-16s03x {\n  0% {\n    transform: rotateY(0deg);\n  }\n\n  50%, 80% {\n    transform: rotateY(-180deg);\n  }\n\n  90%, 100% {\n    opacity: 0;\n    transform: rotateY(-180deg);\n  }\n}"
+  },
+  {
+    "id": 6,
+    "title": "loaders by AHMED-MIT_quick-dragonfly-5",
+    "author": "@AHMED-MIT_quick-dragonfly-5",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"spinner\">\n  <div></div>   \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n</div>",
+    "html": "<div class=\"spinner\">\n  <div></div>   \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n  <div></div>    \n</div>",
+    "css": ".spinner {\n  position: absolute;\n  width: 9px;\n  height: 9px;\n}\n\n.spinner div {\n  position: absolute;\n  width: 50%;\n  height: 150%;\n  background: #474bff;\n  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;\n}\n\n.spinner div:nth-child(1) {\n  --delay: 0.1;\n  --rotation: 36;\n  --translation: 150;\n}\n\n.spinner div:nth-child(2) {\n  --delay: 0.2;\n  --rotation: 72;\n  --translation: 150;\n}\n\n.spinner div:nth-child(3) {\n  --delay: 0.3;\n  --rotation: 108;\n  --translation: 150;\n}\n\n.spinner div:nth-child(4) {\n  --delay: 0.4;\n  --rotation: 144;\n  --translation: 150;\n}\n\n.spinner div:nth-child(5) {\n  --delay: 0.5;\n  --rotation: 180;\n  --translation: 150;\n}\n\n.spinner div:nth-child(6) {\n  --delay: 0.6;\n  --rotation: 216;\n  --translation: 150;\n}\n\n.spinner div:nth-child(7) {\n  --delay: 0.7;\n  --rotation: 252;\n  --translation: 150;\n}\n\n.spinner div:nth-child(8) {\n  --delay: 0.8;\n  --rotation: 288;\n  --translation: 150;\n}\n\n.spinner div:nth-child(9) {\n  --delay: 0.9;\n  --rotation: 324;\n  --translation: 150;\n}\n\n.spinner div:nth-child(10) {\n  --delay: 1;\n  --rotation: 360;\n  --translation: 150;\n}\n\n@keyframes spinner-fzua35 {\n  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));\n  }\n\n  50% {\n    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));\n  }\n}"
+  },
+  {
+    "id": 7,
+    "title": "loaders by AHMED-MIT_serious-mule-65",
+    "author": "@AHMED-MIT_serious-mule-65",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"spinner\"></div>",
+    "html": "<div class=\"spinner\"></div>",
+    "css": ".spinner {\n  --d: 24.6px;\n  width: 4.5px;\n  height: 4.5px;\n  border-radius: 50%;\n  color: #474bff;\n  box-shadow: calc(1*var(--d))      calc(0*var(--d))     0 0,\n          calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1.1px,\n          calc(0*var(--d))      calc(1*var(--d))     0 2.2px,\n          calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3.4px,\n          calc(-1*var(--d))     calc(0*var(--d))     0 4.5px,\n          calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5.6px,\n          calc(0*var(--d))      calc(-1*var(--d))    0 6.7px;\n  animation: spinner-a90wxe 1s infinite steps(8);\n}\n\n@keyframes spinner-a90wxe {\n  100% {\n    transform: rotate(1turn);\n  }\n}"
+  },
+  {
+    "id": 8,
+    "title": "loaders by AbanoubMagdy1_evil-bullfrog-30",
+    "author": "@AbanoubMagdy1_evil-bullfrog-30",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"loader\">\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n</div>",
+    "html": "<div class=\"loader\">\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n    <div class=\"circle\"></div>\n</div>",
+    "css": ".loader {\n  --dim: 3rem;\n  width: var(--dim);\n  height: var(--dim);\n  position: relative;\n  animation: spin988 2s linear infinite;\n}\n\n.loader .circle {\n  --color: #333;\n  --dim: 1.2rem;\n  width: var(--dim);\n  height: var(--dim);\n  background-color: var(--color);\n  border-radius: 50%;\n  position: absolute;\n}\n\n.loader .circle:nth-child(1) {\n  top: 0;\n  left: 0;\n}\n\n.loader .circle:nth-child(2) {\n  top: 0;\n  right: 0;\n}\n\n.loader .circle:nth-child(3) {\n  bottom: 0;\n  left: 0;\n}\n\n.loader .circle:nth-child(4) {\n  bottom: 0;\n  right: 0;\n}\n\n@keyframes spin988 {\n  0% {\n    transform: scale(1) rotate(0);\n  }\n\n  20%, 25% {\n    transform: scale(1.3) rotate(90deg);\n  }\n\n  45%, 50% {\n    transform: scale(1) rotate(180deg);\n  }\n\n  70%, 75% {\n    transform: scale(1.3) rotate(270deg);\n  }\n\n  95%, 100% {\n    transform: scale(1) rotate(360deg);\n  }\n}"
+  },
+  {
+    "id": 9,
+    "title": "loaders by AbanoubMagdy1_hungry-elephant-87",
+    "author": "@AbanoubMagdy1_hungry-elephant-87",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"loader\"></div>",
+    "html": "<div class=\"loader\"></div>",
+    "css": ".loader {\n  --dim: 5rem;\n  width: var(--dim);\n  height: var(--dim);\n  border: 7px solid #2596be;\n  border-top-color: transparent;\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  animation: spin_51 1.5s infinite linear;\n}\n\n@keyframes spin_51 {\n  from {\n    transform: rotate(0)\n  }\n\n  to {\n    transform: rotate(360deg)\n  }\n}"
+  },
+  {
+    "id": 10,
+    "title": "loaders by AbanoubMagdy1_tall-bobcat-75",
+    "author": "@AbanoubMagdy1_tall-bobcat-75",
+    "category": "loaders",
+    "tags": [
+      "loaders"
+    ],
+    "likes": 0,
+    "preview": "<div class=\"loader\">\n  <svg class=\"loader-svg\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 47.94 47.94\" style=\"enable-background:new 0 0 47.94 47.94;\" xml:space=\"preserve\">\n<path style=\"fill:#fff;\" d=\"M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757\n\tc2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042\n\tc0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685\n\tc-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528\n\tc-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956\n\tC22.602,0.567,25.338,0.567,26.285,2.486z\"></path>\n</svg>\n</div>",
+    "html": "<div class=\"loader\">\n  <svg class=\"loader-svg\" version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 47.94 47.94\" style=\"enable-background:new 0 0 47.94 47.94;\" xml:space=\"preserve\">\n<path style=\"fill:#fff;\" d=\"M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757\n\tc2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042\n\tc0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685\n\tc-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528\n\tc-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956\n\tC22.602,0.567,25.338,0.567,26.285,2.486z\"></path>\n</svg>\n</div>",
+    "css": ".loader {\n  --dim: 6rem;\n  background-color: #ED8A19;\n  width: var(--dim);\n  height: var(--dim);\n  border-radius: 50%;\n  display: grid;\n  place-items: center;\n  animation: spin_412 5s infinite;\n}\n\n.loader .loader-svg {\n  transform: translateY(-2px) scale(.7);\n}\n\n@keyframes spin_412 {\n  0% {\n    transform: rotate(0) scale(1);\n  }\n\n  50% {\n    transform: rotate(720deg) scale(1.3);\n  }\n\n  100% {\n    transform: rotate(0) scale(1);\n  }\n}"
+  }
+]
